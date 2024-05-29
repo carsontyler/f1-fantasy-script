@@ -1,39 +1,39 @@
 # Driver data
 drivers = {
-    'Verstappen': {'cost': 30.3, 'points': 161},
-    'Perez': {'cost': 29.2, 'points': 161},
-    # 'Leclerc': {'cost': 28.2, 'points': 159},
-    'Norris': {'cost': 28.7, 'points': 156},
-    # 'Sainz': {'cost': 26.3, 'points': 155},
-    'Russell': {'cost': 22.2, 'points': 139},
-    'Alonso': {'cost': 21.6, 'points': 139},
-    'Hamilton': {'cost': 20.1, 'points': 129},
-    'Piastri': {'cost': 19.7, 'points': 141},
-    # 'Hulkenberg': {'cost': 15.2, 'points': 121},
-    # 'Tsunoda': {'cost': 14.9, 'points': 117},
-    'Albon': {'cost': 9.1, 'points': 100},
-    'Stroll': {'cost': 13.5, 'points': 114},
-    'Ocon': {'cost': 12.7, 'points': 107},
-    'Gasly': {'cost': 10.8, 'points': 97},
-    'Magnussen': {'cost': 9.4, 'points': 107},
-    'Ricciardo': {'cost': 9.6, 'points': 103},
-    'Zhou': {'cost': 9.1, 'points': 101},
-    'Bottas': {'cost': 5.3, 'points': 92},
-    'Sargeant': {'cost': 4.4, 'points': 87}
+    'Verstappen': {'cost': 29.3, 'points': 159},
+    # 'Perez': {'cost': 25.2, 'points': 151},
+    'Leclerc': {'cost': 28.4, 'points': 165},
+    'Norris': {'cost': 28.6, 'points': 159},
+    # 'Sainz': {'cost': 26.8, 'points': 158},
+    'Russell': {'cost': 23.4, 'points': 139},
+    'Alonso': {'cost': 18.7, 'points': 132},
+    'Hamilton': {'cost': 21.1, 'points': 131},
+    # 'Piastri': {'cost': 23.7, 'points': 147},
+    'Hulkenberg': {'cost': 13.4, 'points': 116},
+    'Tsunoda': {'cost': 16.9, 'points': 123},
+    'Albon': {'cost': 11.1, 'points': 104},
+    'Stroll': {'cost': 12.9, 'points': 112},
+    'Ocon': {'cost': 11, 'points': 102},
+    'Gasly': {'cost': 12.5, 'points': 98},
+    # 'Magnussen': {'cost': 7.4, 'points': 101},
+    # 'Ricciardo': {'cost': 10.3, 'points': 102},
+    'Zhou': {'cost': 8.7, 'points': 99},
+    'Bottas': {'cost': 7.3, 'points': 94},
+    'Sargeant': {'cost': 5.6, 'points': 86}
 }
 
 # Team data
 teams = {
-    'Red Bull': {'cost': 29.1, 'points': 167},
-    'Ferrari': {'cost': 26.4, 'points': 158},
-    'McLaren': {'cost': 25.6, 'points': 145},
-    'Mercedes': {'cost': 20.9, 'points': 136},
-    'Aston Martin': {'cost': 16.2, 'points': 110},
-    'Alpine': {'cost': 13.8, 'points': 88},
-    'Haas': {'cost': 12.9, 'points': 95},
-    'RB': {'cost': 14.3, 'points': 98},
-    'Williams': {'cost': 7.0, 'points': 75},
-    'Sauber': {'cost': 7.5, 'points': 78}
+    'Red Bull': {'cost': 25.7, 'points': 142},
+    # 'Ferrari': {'cost': 27.4, 'points': 145},
+    # 'McLaren': {'cost': 26.8, 'points': 139},
+    # 'Mercedes': {'cost': 21.8, 'points': 121},
+    # 'Aston Martin': {'cost': 14.8, 'points': 107},
+    # 'Alpine': {'cost': 13.7, 'points': 87},
+    # 'Haas': {'cost': 10.9, 'points': 90},
+    # 'RB': {'cost': 16.1, 'points': 98},
+    # 'Williams': {'cost': 9.2, 'points': 77},
+    # 'Sauber': {'cost': 7.5, 'points': 78}
 }
 
 def find_best_lineup(drivers, teams, budget, numDrivers, teamNeeded):
@@ -76,8 +76,8 @@ def find_best_lineup(drivers, teams, budget, numDrivers, teamNeeded):
     
     return best_lineup, max_average_points, max_total_cost
 
-numDrivers = 1
-budget = 17.2
+numDrivers = 3
+budget = 49.2
 teamNeeded = True
 best_lineup, average_team_points, max_total_cost = find_best_lineup(drivers, teams, budget, numDrivers, teamNeeded)
 print("Best lineup under budget:")
